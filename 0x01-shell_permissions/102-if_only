@@ -1,2 +1,2 @@
 #!/bin/bash
-idk Yet
+chown --from=guillaume betty hello

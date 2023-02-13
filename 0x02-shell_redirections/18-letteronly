@@ -1,1 +1,2 @@
 #!/bin/bash
+find --sort f -iname [[:alpha:]]* /etc/ssh/sshd_config

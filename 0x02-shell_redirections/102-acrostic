@@ -1,1 +1,2 @@
-#!/bin/bash 103-the_biggest_fan
+#!/bin/bash
+cut -c -1 | tr -d "\n"

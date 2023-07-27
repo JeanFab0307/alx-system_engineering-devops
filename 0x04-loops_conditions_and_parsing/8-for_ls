@@ -2,6 +2,7 @@
 # Print the content of the current working directory
 # in a list format
 # only the part after the dash is printed
-for file in $(ls); do
+command="$(ls)"
+for file in $command; do
     echo "$file" | cut -d "-" -f2
 done

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Display lines contatining the word 'bash'
+ps aux -H | grep -e "bash"

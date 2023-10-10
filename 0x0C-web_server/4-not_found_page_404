@@ -2,6 +2,6 @@
 # install nginx web server
 sudo apt-get -y update
 sudo apt-get -y install nginx
-sudo sed -i "/server_name _;$/a\\tlocation @404 {\n\treturn 404 \"Ceci n'est pas une page\";\n\t}" /etc/nginx/sites-availables/default
+sudo sed -i "/server_name _;$/a\\\tlocation @404 {\n\treturn 404 \"Ceci n'est pas une page\\\n\";\n\t}" /etc/nginx/sites-availables/default
 sudo sed -i "s/=404/@404/g" /etc/nginx/sites-availables/default
 service nginx start

@@ -2,5 +2,5 @@
 # install and conf HAproxy load balancer
 sudo apt-get -y update
 sudo apt-get -y install haproxy
-echo -e '\n\nfrontend enter\n\tbind *:80\n\tdefault_server servers\n\nbackend servers\n\tserver server1 35.168.2.45:80\n\tserver server2 54.172.171.220:80\n' >> /etc/haproxy/haproxy.cfg
+echo -e '\n\nfrontend enter-http\n\tbind *:80\n\tdefault_backend servers\n\nbackend servers\n\tserver server1 35.168.2.45:80 check\n\tserver server2 54.172.171.220:80 check\n' >> /etc/haproxy/haproxy.cfg
 sudo service nginx start

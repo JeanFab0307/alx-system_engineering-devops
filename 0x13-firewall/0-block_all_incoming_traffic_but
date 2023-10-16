@@ -2,6 +2,7 @@
 # enable firewall for some ports
 sudo apt install ufw
 sudo ufw default deny incoming
+sudo ufw default allow outgoing
 sudo ufw allow 20
 sudo ufw allow 80
 sudo ufw allow 443

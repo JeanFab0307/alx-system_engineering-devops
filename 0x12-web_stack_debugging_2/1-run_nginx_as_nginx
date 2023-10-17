@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 # change nginx
-sudo sed -i '1i user nginx;/n' /etc/nginx/nginx.conf
-sudo sed -i 's/80/8080/g' /etc/nginx/nginx.conf
+sudo sed -i 's/user [^;];/user nginx;/n/' /etc/nginx/nginx.conf
+sudo sed -i 's/80/8080/g' /etc/nginx/sites-enabled/default
 sudo nginx -s reload

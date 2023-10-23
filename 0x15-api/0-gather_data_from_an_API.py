@@ -21,10 +21,10 @@ if __name__ == "__main__":
     for task in tasks:
         if task['completed'] is True:
             taskCompleted += 1
-            taskNumber += 1
+        taskNumber += 1
 
-            print('Employee {} is done with tasks({}/{}):'.
-                  format(employee['name'], taskCompleted, taskNumber))
-            for task in tasks:
-                if task['completed'] is True:
-                    print('\t ' + task['title'])
+    print('Employee {} is done with tasks({}/{}):'.
+          format(employee['name'], taskCompleted, taskNumber))
+    for task in tasks:
+        if task['completed'] is True:
+            print('\t ' + task['title'])
